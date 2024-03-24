@@ -159,7 +159,7 @@ const Home = () => {
             </ModalContent>
           </Modal>
 
-          <Flex position={'relative'} backgroundColor={'#68aaff'} paddingX={{ base: 5, md: 20 }} paddingY={14} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#F5F5F5'} className={lato.className}>
+          <Flex position={'relative'} backgroundColor={'#68aaff'} paddingX={{ base: 5, md: 20 }} paddingY={14} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#F5F5F5'} className={lato.className} height={'100%'}>
             <Text className={montserrat.className} fontSize={36} width={'100%'} marginBottom={30} fontWeight={600}>Let's Craft Brilliance</Text>
             <form onSubmit={handleSubmit} style={{ position: 'relative', zIndex: 990 }}>
               <Flex flexDirection={{ base: 'column', md: 'row' }} gap={{ base: 0, md: 50 }}>
@@ -201,8 +201,8 @@ const Home = () => {
               </Flex>
             </form>
             {!isMobile &&
-              <motion.div id="dnaCropped" style={{ position: 'absolute', height: '70%', top: '5%', right: '5%', zIndex: 980 }} initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
-                <img src='/dnaCropped.gif' loading='eager' />
+              <motion.div id="dnaCropped" style={{ position: 'absolute', height: '80%', top: '10%', right: '5%', zIndex: 980, marginTop: 'auto', marginBottom: 'auto' }} initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
+                <img src='/dnaCropped.gif' loading='eager' style={{ height: '100%'}} />
               </motion.div>
             }
           </Flex>
