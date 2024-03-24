@@ -6,19 +6,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:turbo": "pnpm dlx turbo@latest run build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint src --fix && pnpm format",
     "type-check": "tsc --noEmit",
-    "check:turbo": "pnpm dlx turbo@latest lint type-check",
     "test:e2e": "playwright test",
     "format": "prettier --write src",
-    "up-interactive": "pnpm up -i",
-    "up-latest": "pnpm up-interactive -L",
-    "push-release": "git push --follow-tags origin main",
-    "preinstall": "npx only-allow pnpm"
+    "push-release": "git push --follow-tags origin main"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
@@ -30,7 +24,6 @@
     "framer-motion": "^11.0.14",
     "next": "^14.1.0",
     "next-pwa": "^5.6.0",
-    "only-allow": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
@@ -56,7 +49,6 @@
     "typescript": "^5.4.2"
   },
   "engines": {
-    "node": ">=16.x.x",
-    "pnpm": ">=8"
+    "node": ">=16.x.x"
   }
 }
