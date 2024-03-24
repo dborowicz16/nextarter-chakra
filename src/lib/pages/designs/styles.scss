@@ -1,0 +1,77 @@
+.chakra-input::placeholder {
+    color: rgba(40, 44, 53, .2);
+    font-weight: 900;
+  }
+
+  // Colors
+$color-primary-white: rgb(240, 240, 240);
+
+.card {
+  height: 442px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: $color-primary-white;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+ 
+  img {
+    position: absolute;
+    object-fit: cover;
+    object-position: left;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity .2s ease-out;
+  }
+
+  h2 {
+    position: absolute;
+    inset: 370px auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    font-size: 24px;
+  }
+  
+  p, a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity .3s ease-out;
+  }
+  
+  p {
+    inset: auto auto 80px 30px;
+  }
+  
+  p#cta {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+  }
+  &:hover img {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+  }
+  
+  &:hover h2 {
+    inset: 80px auto 220px 30px;
+    transition: inset .3s ease-out;
+  }
+  
+  &:hover p, &:hover a {
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+  }
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+

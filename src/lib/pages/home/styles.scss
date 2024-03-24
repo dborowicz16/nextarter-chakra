@@ -1,0 +1,428 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.textAnimation,
+.textAnimation2,
+.textAnimation3,
+.textAnimation4,
+.smallTextAnimation,
+.smallTextAnimation2,
+.smallTextAnimation3,
+.smallTextAnimation4 {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+
+}
+
+.textAnimation::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #69A1F3;
+  /* -webkit-text-stroke: 1px #ff7a00; */
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: text-fill 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+  text-shadow: 0px 0px 3px #69A1F3;
+}
+
+.smallTextAnimation::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: -3px;
+  color: #69A1F3;
+  font-size: 24px;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: text-fill 1s ease-in-out;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+  text-shadow: 0px 0px 3px #69A1F3;
+}
+
+.textAnimation2::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #de2323;
+  /* -webkit-text-stroke: 1px #ff7a00; */
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: text-fill 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 6.3s;
+  text-shadow: 0px 0px 3px #de2323;
+}
+
+.smallTextAnimation2::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: -3px;
+  color: #de2323;
+  font-size: 24px;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: text-fill 1s ease-in-out;
+  animation-delay: 6.8s;
+  animation-fill-mode: forwards;
+  text-shadow: 0px 0px 3px #de2323;
+}
+
+.textAnimation3::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #04d112;
+  /* -webkit-text-stroke: 1px #ff7a00; */
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: text-fill 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 7.6s;
+  text-shadow: 0px 0px 3px #04d112;
+}
+
+.smallTextAnimation3::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: -3px;
+  color: #04d112;
+  font-size: 24px;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: text-fill 1s ease-in-out;
+  animation-delay: 8.1s;
+  animation-fill-mode: forwards;
+  text-shadow: 0px 0px 3px #04d112;
+}
+
+.textAnimation4::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ff7a00;
+  /* -webkit-text-stroke: 1px #ff7a00; */
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: text-fill 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 8.9s;
+  text-shadow: 0px 0px 3px #ff7a00;
+}
+
+.smallTextAnimation4::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: -3px;
+  color: #ff7a00;
+  font-size: 24px;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: text-fill 1s ease-in-out;
+  animation-delay: 9.4s;
+  animation-fill-mode: forwards;
+  text-shadow: 0px 0px 3px #ff7a00;
+}
+
+
+@keyframes text-fill {
+  100% {
+    width: 100%;
+  }
+}
+
+.ag-format-container {
+  width: 100%;
+  margin: 0 0;
+}
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-top: 50px;
+}
+
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: 350px;
+
+  margin: 0 0 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+
+.ag-courses-item_link {
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #282C35;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+.ag-courses-item_title {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: '__Montserrat_b1da2a', '__Montserrat_Fallback_b1da2a';
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date-box {
+  font-size: 20px;
+  color: #FFF;
+  font-family: '__Lato_b8262e', '__Lato_Fallback_b8262e';
+
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_title {
+  color: white !important;
+}
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .ag-courses-item_title {
+    line-height: 1;
+
+    font-size: 24px;
+  }
+
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+
+  .ag-courses-item_date-box {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+span[aria-checked=true],
+span[data-checked] {
+  color: #F5F5F5 !important;
+  background: #69A1F3 !important;
+  border-color: #F5F5F5 !important;
+}
+
+span.chakra-radio__label {
+  font-size: 20px;
+}
+
+.highlighted {
+  color: white;
+  animation-name: colorChange;
+  animation-duration: 15s;
+  /* Adjust the total duration for one cycle */
+  animation-iteration-count: infinite;
+  /* Repeat the animation indefinitely */
+  animation-timing-function: linear;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #f9b234;
+    /* First target color */
+  }
+
+  25% {
+    color: #3ecd5e;
+    /* First target color */
+  }
+
+  50% {
+    color: #e44002;
+    /* Second target color */
+  }
+
+  75% {
+    color: #952aff;
+    /* Third target color */
+  }
+
+  100% {
+    color: #f9b234;
+    /* Fourth target color */
+  }
+}
+
+
+::-webkit-scrollbar {
+  z-index: 999;
+  width: 15px;
+  /* Set a high z-index */
+}
+
+/* Optional: Customize scrollbar appearance */
+::-webkit-scrollbar-thumb {
+  background-color: #b5b5b5;
+  border-radius: 25px;
+  /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* Color of the scrollbar track */
+}
+
+div#aboutDiv {
+  height: fit-content;
+}
+
+@media screen and (min-width: 80em) {
+  div#aboutDiv {
+    height: 100%;
+  }
+}
+
+
+img#natureCropped {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 48em) {
+  img#natureCropped {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 96em) {
+  img#natureCropped {
+    width: 100%;
+  }
+}
+
+video#dnaCropped {
+  display: none;
+}
+
+@media screen and (min-width: 96em) {
+  video#dnaCropped {
+    display: block;
+  }
+}

@@ -39,13 +39,13 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#FFFFFF',
+  themeColor: '#282C35',
 };
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
-      <body>
+      <body style={{ backgroundColor: '#282C35'}}>
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
