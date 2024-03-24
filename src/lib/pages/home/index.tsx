@@ -49,7 +49,7 @@ const Home = () => {
       <Box width={'100%'}> {/* Home page */}
         <Box height={'100%'} width={'100%'}>
           <Flex height={'100%'} width={'100%'} justifyContent={'space-between'} alignItems={'center'} overflow={'hidden'}>
-            <Flex height={'100%'} width={'100%'} justifyContent={'center'} direction={'column'} gap={1} paddingX={{ base: 5, md: 20}} color={'white'} position={'relative'} flex={'1 0 50%'}>
+            <Flex height={'100%'} width={'100%'} justifyContent={'center'} direction={'column'} gap={1} paddingX={{ base: 5, md: 20 }} color={'white'} position={'relative'} flex={'1 0 50%'}>
               <Text className={montserrat.className} fontSize={{ base: 36, md: 72 }} fontWeight={600}>A digital agency focused on <span color='white' className="highlighted">you</span></Text>
               <Text className={lato.className} fontSize={{ base: 20, md: 24 }} marginRight={{ base: 14, md: 72 }}>Crafting digital experiences tailored around your specific business needs</Text>
               <Link href="/designs"><Button variant={'outline'} color={'white'} size={'lg'} maxWidth={'200px'} marginTop={2} borderRadius={10} className={lato.className} _hover={{ color: '#282C35', backgroundColor: '#e2e8f0' }} fontSize={20}>View Our Portfolio</Button></Link>
@@ -142,7 +142,7 @@ const Home = () => {
               </div>
             </div>
           </Flex>
-          
+
           <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
             <ModalOverlay />
             <ModalContent margin={'auto'}>
@@ -158,7 +158,7 @@ const Home = () => {
               </ModalFooter>
             </ModalContent>
           </Modal>
-          
+
           <Flex position={'relative'} backgroundColor={'#68aaff'} paddingX={{ base: 5, md: 20 }} paddingY={14} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#F5F5F5'} className={lato.className}>
             <Text className={montserrat.className} fontSize={36} width={'100%'} marginBottom={30} fontWeight={600}>Let's Craft Brilliance</Text>
             <form onSubmit={handleSubmit}>
@@ -200,9 +200,11 @@ const Home = () => {
                 <Button type='submit' borderColor={'#69A1F3'} background={'#F5F5F5'} color={'#69A1F3'} size={'lg'} borderRadius={'10px'} fontSize={20}>Submit</Button>
               </Flex>
             </form>
+            {!isMobile &&
               <motion.div id="dnaCropped" style={{ position: 'absolute', height: '90%', right: '5%' }} initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
-                <img src='/dnaCropped.gif' loading='eager'  />
+                <img src='/dnaCropped.gif' loading='eager' />
               </motion.div>
+            }
           </Flex>
           <Flex backgroundColor={'#282C35'} alignItems={'center'} justifyContent={'space-between'} width={'100%'} padding={4} color={'#F5F5F5'}>
             <Flex alignItems={'center'} gap={2}>
