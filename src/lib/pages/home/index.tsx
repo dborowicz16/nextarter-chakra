@@ -84,7 +84,7 @@ const Home = () => {
             </motion.div>
             <div className="ag-format-container">
               <div className="ag-courses_box">
-                <motion.div className="ag-courses_item" initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
+                <motion.div className="ag-courses_item" initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }} style={{ marginRight: 10 }}>
                   <div className="ag-courses-item_link">
                     <div className="ag-courses-item_bg"></div>
 
@@ -98,7 +98,7 @@ const Home = () => {
                   </div>
                 </motion.div>
 
-                <motion.div className="ag-courses_item" initial={{ opacity: 0, translateX: isMobile ? '100%' : '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5, delay: isMobile ? 0 : 0.5 }}>
+                <motion.div className="ag-courses_item" initial={{ opacity: 0, translateX: isMobile ? '100%' : '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5, delay: isMobile ? 0 : 0.5 }} style={{ marginLeft: 10, marginRight: 10 }}>
                   <div className="ag-courses-item_link">
                     <div className="ag-courses-item_bg"></div>
 
@@ -112,7 +112,7 @@ const Home = () => {
                   </div>
                 </motion.div>
 
-                <motion.div className="ag-courses_item" initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5, delay: isMobile ? 0 : 1 }}>
+                <motion.div className="ag-courses_item" initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5, delay: isMobile ? 0 : 1 }} style={{ marginLeft: 10, marginRight: 10 }}>
                   <div className="ag-courses-item_link">
                     <div className="ag-courses-item_bg"></div>
 
@@ -126,7 +126,7 @@ const Home = () => {
                   </div>
                 </motion.div>
 
-                <motion.div className="ag-courses_item" initial={{ opacity: 0, translateX: isMobile ? '100%' : '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5, delay: isMobile ? 0 : 1.5 }}>
+                <motion.div className="ag-courses_item" initial={{ opacity: 0, translateX: isMobile ? '100%' : '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5, delay: isMobile ? 0 : 1.5 }} style={{ marginLeft: 10 }}>
                   <div className="ag-courses-item_link">
                     <div className="ag-courses-item_bg"></div>
 
