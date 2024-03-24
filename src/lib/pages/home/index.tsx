@@ -201,7 +201,7 @@ const Home = () => {
               </Flex>
             </form>
             {!isMobile &&
-              <motion.div id="dnaCropped" style={{ position: 'absolute', height: '90%', right: '5%', zIndex: 980 }} initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
+              <motion.div id="dnaCropped" style={{ position: 'absolute', height: '70%', top: '5%', right: '5%', zIndex: 980 }} initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
                 <img src='/dnaCropped.gif' loading='eager' />
               </motion.div>
             }
