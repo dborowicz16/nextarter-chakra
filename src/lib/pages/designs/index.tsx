@@ -31,7 +31,7 @@ const query = `
 const Designs = () => {
     const [designs, setDesigns] = useState(null);
     const [isMobile] = useMediaQuery('(max-width:  768px)');
-    const [inputValue, setInputValue] = useState();
+    const [inputValue, setInputValue] = useState<string | undefined>();
     const [flexboxWidth, setFlexboxWidth] = useState();
 
 
