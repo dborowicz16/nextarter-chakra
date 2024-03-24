@@ -77,7 +77,7 @@ const Home = () => {
               </Flex>
             </Flex>
           </motion.div> {/* Our Services page */}
-          <Flex backgroundColor={'#F5F5F5'} paddingX={{ base: 5, md: 20 }} paddingY={14} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#282C35'} overflowX={'hidden'} height={{ base: 'fit-content' }}>
+          <Flex backgroundColor={'#F5F5F5'} paddingX={{ base: 5, md: 20 }} paddingY={16} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#282C35'} overflowX={'hidden'} height={{ base: 'fit-content' }}>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
               <Text color={'#282C35'} className={montserrat.className} fontSize={36} fontWeight={600}>Our Services</Text>
               <Text className={lato.className} fontSize={{ base: 20, md: 24 }} marginRight={12} width={'80%'}>Leverage Our Digital Expertise to Drive Your Business Growth</Text>
