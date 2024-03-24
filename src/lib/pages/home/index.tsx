@@ -159,7 +159,7 @@ const Home = () => {
             </ModalContent>
           </Modal>
 
-          <Flex position={'relative'} backgroundColor={'#68aaff'} paddingX={{ base: 5, md: 20 }} paddingY={14} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#F5F5F5'} className={lato.className} height={'100%'}>
+          <Flex position={'relative'} backgroundColor={'#68aaff'} paddingX={{ base: 5, md: 20 }} paddingY={14} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#F5F5F5'} className={lato.className}>
             <Text className={montserrat.className} fontSize={36} width={'100%'} marginBottom={30} fontWeight={600}>Let's Craft Brilliance</Text>
             <form onSubmit={handleSubmit} style={{ position: 'relative', zIndex: 990 }}>
               <Flex flexDirection={{ base: 'column', md: 'row' }} gap={{ base: 0, md: 50 }}>
