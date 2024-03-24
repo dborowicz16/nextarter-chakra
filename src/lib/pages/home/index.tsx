@@ -59,7 +59,7 @@ const Home = () => {
             }
           </Flex>
           {/* About Us page */}
-          <motion.div id="aboutDiv" initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }} style={{ overflow: 'hidden', height: 'fit-content', backgroundColor: '#68aaff' }}>
+          <motion.div id="aboutDiv" initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }} style={{ overflow: 'hidden', backgroundColor: '#68aaff' }}>
             <Flex gap={{ base: 0, '2xl': 10 }} paddingY={{ base: 50, md: 100 }} paddingX={{ base: 5, md: 20 }} justifyContent={{ base: 'center', '2xl': 'space-between' }} alignItems={'center'} direction={{ base: 'column', '2xl': 'row-reverse' }} textAlign={'left'} color={'#F5F5F5'} height={'100%'}>
               <motion.div initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }} style={{ marginBottom: 20 }}>
                 <img id="natureCropped" src={'/natureCropped.gif'} alt='' />
