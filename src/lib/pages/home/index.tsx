@@ -200,7 +200,7 @@ const Home = () => {
                 <Button type='submit' borderColor={'#69A1F3'} background={'#F5F5F5'} color={'#69A1F3'} size={'lg'} borderRadius={'10px'} fontSize={20}>Submit</Button>
               </Flex>
             </form>
-              <motion.div id="dnaCropped" style={{ position: 'absolute', height: '90%', right: '5%' }} initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
+              <motion.div id="dnaCropped" style={{ position: 'absolute', height: '70%', right: '5%' }} initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
                 <img src='/dnaCropped.gif' loading='eager'  />
               </motion.div>
           </Flex>
