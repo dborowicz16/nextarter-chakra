@@ -161,23 +161,23 @@ const Home = () => {
 
           <Flex position={'relative'} backgroundColor={'#68aaff'} paddingX={{ base: 5, md: 20 }} paddingY={14} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#F5F5F5'} className={lato.className}>
             <Text className={montserrat.className} fontSize={36} width={'100%'} marginBottom={30} fontWeight={600}>Let's Craft Brilliance</Text>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} style={{ position: 'relative', zIndex: 990 }}>
               <Flex flexDirection={{ base: 'column', md: 'row' }} gap={{ base: 0, md: 50 }}>
-                <FormControl width={{ base: '100%', xl: '25%' }} isRequired>
+                <FormControl width={{ base: '100%', lg: '25%' }} isRequired>
                   <FormLabel color={'#F5F5F5'} fontSize={20} fontWeight={400} className={lato.className}>Full Name</FormLabel>
                   <Input type='text' name='name' borderWidth={3} marginBottom={5} _focusVisible={{ borderColor: 'white' }} />
                 </FormControl>
-                <FormControl width={{ base: '100%', xl: '25%' }} isRequired>
+                <FormControl width={{ base: '100%', lg: '25%' }} isRequired>
                   <FormLabel color={'#F5F5F5'} fontSize={20} fontWeight={400} className={lato.className}>Email address</FormLabel>
                   <Input type='email' name='email' borderWidth={3} marginBottom={5} _focusVisible={{ borderColor: 'white' }} />
                 </FormControl>
               </Flex>
               <Flex flexDirection={{ base: 'column', md: 'row' }} gap={{ base: 0, md: 50 }}>
-                <FormControl width={{ base: '100%', xl: '25%' }}>
+                <FormControl width={{ base: '100%', lg: '25%' }}>
                   <FormLabel color={'#F5F5F5'} fontSize={20} fontWeight={400} className={lato.className}>Phone Number</FormLabel>
                   <Input type='tel' name='phone' borderWidth={3} marginBottom={5} _focusVisible={{ borderColor: 'white' }} />
                 </FormControl>
-                <FormControl width={{ base: '100%', xl: '25%' }} isRequired>
+                <FormControl width={{ base: '100%', lg: '25%' }} isRequired>
                   <FormLabel color={'#F5F5F5'} fontSize={20} fontWeight={400} className={lato.className}>Company Name</FormLabel>
                   <Input type='text' name='company' borderWidth={3} marginBottom={5} _focusVisible={{ borderColor: 'white' }} />
                 </FormControl>
@@ -194,14 +194,14 @@ const Home = () => {
                   </Stack>
                 </RadioGroup>
               </FormControl>
-              <Flex flexDirection={'column'} width={{ base: '100%', xl: '53%' }}>
+              <Flex flexDirection={'column'} width={{ base: '100%', lg: '53%' }}>
                 <Text mt={4} mb={2} fontSize={24} className={lato.className}>Additional Comments</Text>
                 <Textarea name='comments' borderWidth={3} mb={4} _focusVisible={{ borderColor: '#F5F5F5' }} resize={'none'} />
                 <Button type='submit' borderColor={'#69A1F3'} background={'#F5F5F5'} color={'#69A1F3'} size={'lg'} borderRadius={'10px'} fontSize={20}>Submit</Button>
               </Flex>
             </form>
             {!isMobile &&
-              <motion.div id="dnaCropped" style={{ position: 'absolute', height: '90%', right: '5%' }} initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
+              <motion.div id="dnaCropped" style={{ position: 'absolute', height: '90%', right: '5%', zIndex: 980 }} initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
                 <img src='/dnaCropped.gif' loading='eager' />
               </motion.div>
             }
