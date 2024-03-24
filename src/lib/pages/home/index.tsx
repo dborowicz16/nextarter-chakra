@@ -59,8 +59,8 @@ const Home = () => {
             }
           </Flex>
           {/* About Us page */}
-          <motion.div id="aboutDiv" initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }} style={{ overflow: 'hidden' }}>
-            <Flex gap={{ base: 0, '2xl': 10 }} paddingY={{ base: 50, md: 100 }} backgroundColor={'#68aaff'} paddingX={{ base: 5, md: 20 }} justifyContent={{ base: 'center', '2xl': 'space-between' }} alignItems={'center'} direction={{ base: 'column', '2xl': 'row-reverse' }} textAlign={'left'} color={'#F5F5F5'} height={'fit-content'}>
+          <motion.div id="aboutDiv" initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }} style={{ overflow: 'hidden', height: '100%', backgroundColor: '#68aaff' }}>
+            <Flex gap={{ base: 0, '2xl': 10 }} paddingY={{ base: 50, md: 100 }} paddingX={{ base: 5, md: 20 }} justifyContent={{ base: 'center', '2xl': 'space-between' }} alignItems={'center'} direction={{ base: 'column', '2xl': 'row-reverse' }} textAlign={'left'} color={'#F5F5F5'} height={'100%'}>
               <motion.div initial={{ opacity: 0, translateX: '-100%' }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ ease: 'easeInOut', duration: 0.5 }} style={{ marginBottom: 20 }}>
                 <img id="natureCropped" src={'/natureCropped.gif'} alt='' />
               </motion.div>
@@ -77,7 +77,7 @@ const Home = () => {
               </Flex>
             </Flex>
           </motion.div> {/* Our Services page */}
-          <Flex backgroundColor={'#F5F5F5'} paddingX={{ base: 5, md: 20 }} paddingY={14} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#282C35'} overflowX={'hidden'} height={{ base: 'fit-content' }}>
+          <Flex backgroundColor={'#F5F5F5'} paddingX={{ base: 5, md: 20 }} paddingY={14} justifyContent={'center'} direction={'column'} textAlign={'left'} color={'#282C35'} overflowX={'hidden'} height={{ base: '100%' }}>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: 'easeInOut', duration: 0.5 }}>
               <Text color={'#282C35'} className={montserrat.className} fontSize={36} fontWeight={600}>Our Services</Text>
               <Text className={lato.className} fontSize={{ base: 20, md: 24 }} marginRight={12} width={'80%'}>Leverage Our Digital Expertise to Drive Your Business Growth</Text>
