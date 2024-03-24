@@ -14,7 +14,6 @@
     "type-check": "tsc --noEmit",
     "check:turbo": "pnpm dlx turbo@latest lint type-check",
     "test:e2e": "playwright test",
-    "test": "playwright test",
     "format": "prettier --write src",
     "up-interactive": "pnpm up -i",
     "up-latest": "pnpm up-interactive -L",
