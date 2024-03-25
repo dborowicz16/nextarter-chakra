@@ -147,7 +147,7 @@ const Designs = () => {
                         </Box>
                         <Text className={montserrat.className} color={'white'} fontSize={32} fontWeight={'600'}>dbss</Text>
                     </Flex>
-                    <Text className={lato.className} fontSize={20}>DbssLLC@gmail.com</Text>
+                    <Text className={lato.className} fontSize={20}>Hello@dbssllc.com</Text>
                 </Flex>
             </Box>
         </>
