@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'DBSS, LLC',
     description: 'A different kind of digital agency',
     images: {
-      url: 'https://res.cloudinary.com/dw0bnekck/image/upload/v1711380358/Montserrat-removebg-preview_qdxf8a.png',
+      url: 'https://res.cloudinary.com/dw0bnekck/image/upload/v1711383291/open_graph_image_pyrpsg.png',
       alt: 'Dbss, LLC Logo',
     },
   },
