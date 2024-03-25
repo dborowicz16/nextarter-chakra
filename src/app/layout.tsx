@@ -11,7 +11,7 @@ const APP_NAME = 'DBSS, LLC';
 
 export const metadata: Metadata = {
   title: { default: APP_NAME, template: '%s | DBSS, LLC' },
-  description: 'Next.js + chakra-ui + TypeScript template',
+  description: 'A different kind of digital agency',
   applicationName: APP_NAME,
   appleWebApp: {
     capable: true,
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     url: 'https://dbssllc.com',
     title: 'DBSS, LLC',
     description: 'A different kind of digital agency',
-    // images: {
-    //   url: 'https://og-image.sznm.dev/**nextarter-chakra**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250',
-    //   alt: 'nextarter-chakra.sznm.dev og-image',
-    // },
+    images: {
+      url: 'https://res.cloudinary.com/dw0bnekck/image/upload/v1711380358/Montserrat-removebg-preview_qdxf8a.png',
+      alt: 'Dbss, LLC Logo',
+    },
   },
   twitter: {
     creator: 'DBSS, LLC',
