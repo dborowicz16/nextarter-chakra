@@ -1,8 +1,8 @@
 {
-  "name": "nextarter-chakra",
+  "name": "DBSS_LLC",
   "version": "0.1.0",
   "private": true,
-  "author": "sozonome",
+  "author": "DBSS",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
