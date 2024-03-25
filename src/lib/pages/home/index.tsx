@@ -32,8 +32,6 @@ const Home = () => {
     }
   }, [state.succeeded]);
 
-  console.log('state', state);
-
   return (
     <>
       <Flex backgroundColor={'#282C35'} alignItems={'center'} justifyContent={'space-between'} width={'100%'} position={'fixed'} padding={4} zIndex={998}>

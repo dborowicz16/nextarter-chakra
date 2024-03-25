@@ -48,7 +48,7 @@ const Designs = () => {
             .then((response) => response.json())
             .then(({ data, errors }) => {
                 if (errors) {
-                    console.error(errors);
+                    return;
                 }
 
                 // rerender the entire component with new data
@@ -59,9 +59,6 @@ const Designs = () => {
     if (!designs) {
         return "Loading...";
     }
-
-    console.log('posts', designs)
-    console.log('value', inputValue);
 
     return (
         <>

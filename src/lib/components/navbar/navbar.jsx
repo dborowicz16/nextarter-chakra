@@ -9,15 +9,12 @@ const montserrat = Montserrat({ subsets: ['latin'] });
 
 const url = window.location.href;
 const isDesignsPageCheck = url.includes('designs');
-console.log('is designs page', isDesignsPageCheck);
-console.log('url', url)
 
 export const Navbar = () => {
     const [isDesignsPage, setIsDesignsPage] = useState(false);
 
     useEffect(() => {
         setIsDesignsPage(isDesignsPageCheck)
-        console.log('is designs apge huh?', isDesignsPage)
     }, [url, isDesignsPageCheck]);
 
     return (
