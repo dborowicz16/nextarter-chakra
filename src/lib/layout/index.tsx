@@ -2,7 +2,6 @@
 
 import { Flex } from '@chakra-ui/react';
 import type { ReactNode } from 'react';
-import { Navbar } from '../components/navbar/navbar';
 
 type LayoutProps = {
   children: ReactNode;
