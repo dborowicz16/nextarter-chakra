@@ -50,7 +50,7 @@ const Home = () => {
         <Box height={'100%'} width={'100%'}>
           <Flex height={'100%'} width={'100%'} justifyContent={'space-between'} alignItems={'center'} overflow={'hidden'}>
             <Flex height={'100%'} width={'100%'} justifyContent={'center'} direction={'column'} gap={1} paddingX={{ base: 5, md: 20 }} color={'white'} position={'relative'} flex={'1 0 50%'}>
-              <Text className={montserrat.className} fontSize={{ base: 36, xl: 72 }} fontWeight={600}>A digital agency focused on <span color='white' className="highlighted">you</span></Text>
+              <Text className={montserrat.className} fontSize={{ base: 36, xl: 60 }} fontWeight={600}>A digital agency focused on <span color='white' className="highlighted">you</span></Text>
               <Text className={lato.className} fontSize={{ base: 20, xl: 24 }} marginRight={{ base: 14, md: 72 }}>Crafting digital experiences tailored around your specific business needs</Text>
               <Link href="/designs"><Button variant={'outline'} color={'white'} size={'lg'} maxWidth={'200px'} marginTop={2} borderRadius={10} className={lato.className} _hover={{ color: '#282C35', backgroundColor: '#e2e8f0' }} fontSize={20}>View Our Portfolio</Button></Link>
             </Flex>
